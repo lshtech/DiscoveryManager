@@ -46,6 +46,7 @@ G.FUNCS.ResetDiscovered_Menu = function(e)
 end
 
 function config_tab()
+    G.focused_profile = G.SETTINGS.profile
     return {
         n = G.UIT.ROOT,
         config = {
@@ -372,9 +373,6 @@ G.FUNCS.undiscover_all = function(e)
     set_discover_tallies()
     G:save_progress()
     G.FILE_HANDLER.force = true
-
-    local tab_but = G.OVERLAY_MENU:get_UIE_by_ID('tab_but_'..G.focused_profile)
-    G.FUNCS.change_tab(tab_but)
 end
 
 G.FUNCS.clear_all = function(e)
