@@ -242,6 +242,35 @@ if CardSleeves then
     end
 end
 
+if (SMODS.Mods["LobotomyCorp"] or {}).can_load then
+    SMODS.UndiscoveredSprite {
+        key = 'EGO_Gift',
+        atlas = 'lobc_LobotomyCorp_Undiscovered',
+        pos = {x = 0, y = 0}
+    }
+end
+
+if (SMODS.Mods["Pokermon"] or {}).can_load then
+    SMODS.UndiscoveredSprite {
+        key = 'Item',
+        atlas = 'poke_Mart',
+        pos = {x = 0, y = 0}
+    }
+    SMODS.UndiscoveredSprite {
+        key = 'Energy',
+        atlas = 'poke_Mart',
+        pos = {x = 0, y = 0}
+    }
+end
+
+if (SMODS.Mods["Othermod"] or {}).can_load then
+    SMODS.UndiscoveredSprite {
+        key = 'potion',
+        atlas = 'othe_blue_and_red',
+        pos = {x = 0, y = 0}
+    }
+end
+
 local pack = G.P_CENTERS["p_voucher_pack"]
 print("checking p_voucher_pack")
 if pack then
