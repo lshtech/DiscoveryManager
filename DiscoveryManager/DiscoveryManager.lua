@@ -238,10 +238,10 @@ if CardSleeves then
             self.unlock_condition = { deck = "b_jimb_neon", stake = 3 }
         elseif self.key == "sleeve_buf_galloping" then
             self.unlocked = false
-            self.unlock_condition = { deck = "b_Buffoonery_galloping", stake = 3 }
+            self.unlock_condition = { deck = "b_buf_galloping", stake = 3 }
         elseif self.key == "sleeve_buf_jstation" then
             self.unlocked = false
-            self.unlock_condition = { deck = "b_Buffoonery_jstation", stake = 3 }
+            self.unlock_condition = { deck = "b_buf_jstation", stake = 3 }
         end
 
         CardSleeves_Sleeve_inject(self)
