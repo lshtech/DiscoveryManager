@@ -277,6 +277,14 @@ if (SMODS.Mods["Othermod"] or {}).can_load then
     }
 end
 
+if (SMODS.Mods["robalatro"] or {}).can_load then
+    SMODS.UndiscoveredSprite {
+        key = 'Gear',
+        atlas = 'robl_gearatlas',
+        pos = {x = 0, y = 0}
+    }
+end
+
 local pack = G.P_CENTERS["p_voucher_pack"]
 print("checking p_voucher_pack")
 if pack then
