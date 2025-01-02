@@ -125,7 +125,7 @@ end
 
 local SMODS_ConsumableType_inject=SMODS.ConsumableType.inject
 SMODS.ConsumableType.inject = function(self)
-    if not self.loc_txt.undiscovered or self.loc_txt.undiscovered.text[1] ==  'idk stuff ig' then
+    if self.loc_txt and (not self.loc_txt.undiscovered or self.loc_txt.undiscovered.text[1] ==  'idk stuff ig') then
         self.loc_txt.undiscovered = {
             name = 'Undiscovered',
             text = { 'discover this card', 'to discover' },
